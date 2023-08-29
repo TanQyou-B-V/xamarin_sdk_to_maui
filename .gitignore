@@ -187,3 +187,5 @@ FakesAssemblies/
 .DS_Store
 Android/.vs
 iOS/.vs
+nuget.config
+*.nupkg

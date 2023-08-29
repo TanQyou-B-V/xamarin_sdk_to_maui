@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-ios</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <IsBindingProject>true</IsBindingProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+    <ObjcBindingCoreSource Include="Structs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Structs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="..\AdjustSdk.Xamarin.iOS\Resources\libAdjust.a">
+      <Kind>Framework</Kind>
+      <WeakFrameworks>AdSupport iAd CoreTelephony StoreKit AdServices AppTrackingTransparency</WeakFrameworks>
+      <LinkerFlags>-ObjC</LinkerFlags>
+    </NativeReference>
+  </ItemGroup>
+</Project>

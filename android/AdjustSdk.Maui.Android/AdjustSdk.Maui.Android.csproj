@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-android33.0</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Jars\adjust-android.jar" />
+    <None Remove="Jars\installreferrer-1.0.aar" />
+    <None Remove="Jars\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\adjust-android.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <LibraryProjectZip Include="Jars\installreferrer-1.0.aar">
+      <Pack></Pack>
+    </LibraryProjectZip>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Jars\" />
+  </ItemGroup>
+</Project>
