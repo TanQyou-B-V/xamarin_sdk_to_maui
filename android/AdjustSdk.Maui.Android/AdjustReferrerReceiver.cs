@@ -1,5 +1,4 @@
-﻿using Android.App;
-using Android.Content;
+﻿using Android.Content;
 
 namespace AdjustBindingsAndroid
 {
@@ -9,7 +8,7 @@ namespace AdjustBindingsAndroid
     {
         private readonly Com.Adjust.Sdk.AdjustReferrerReceiver broadcastReceiver = new Com.Adjust.Sdk.AdjustReferrerReceiver();
 
-        public override void OnReceive(Context context, Intent intent)
+        public override void OnReceive(Context? context, Intent? intent)
         {
             broadcastReceiver.OnReceive(context, intent);
         }

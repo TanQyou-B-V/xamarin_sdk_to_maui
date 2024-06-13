@@ -4,18 +4,17 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
     <IsBindingProject>true</IsBindingProject>
+    <RootNamespace>AdjustBindingsiOS</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Structs.cs" />
-  </ItemGroup>
+
   <ItemGroup>
     <NativeReference Include="..\AdjustSdk.Xamarin.iOS\Resources\libAdjust.a">
-      <Kind>Framework</Kind>
+      <Kind>Static</Kind>
       <WeakFrameworks>AdSupport iAd CoreTelephony StoreKit AdServices AppTrackingTransparency</WeakFrameworks>
       <LinkerFlags>-ObjC</LinkerFlags>
     </NativeReference>

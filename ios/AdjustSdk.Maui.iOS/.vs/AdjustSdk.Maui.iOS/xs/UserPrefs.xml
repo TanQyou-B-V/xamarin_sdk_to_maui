@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ApiDefinition.cs">
+    <Files>
+      <File FileName="ApiDefinition.cs" Line="220" Column="9" />
+      <File FileName="AdjustSdk.Maui.iOS.csproj" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AdjustSdk.Maui.iOS">
+            <Node name="AdjustSdk.Maui.iOS" selected="True">
+              <Node name="NativeReferenceFolder" expanded="True" />
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+</Properties>

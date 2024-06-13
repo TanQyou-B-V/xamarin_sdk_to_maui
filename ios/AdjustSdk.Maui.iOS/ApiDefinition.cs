@@ -179,7 +179,7 @@ namespace AdjustBindingsiOS
 
         [Obsolete("This method is deprecated. Please use this method: ConfigWithAppToken(string appToken, string environment)")]
         [Export("initWithAppToken:environment:")]
-        IntPtr Constructor(string appToken, string environment);
+        NativeHandle Constructor(string appToken, string environment);
 
         [Export("isValid")]
         bool IsValid { get; }
@@ -217,7 +217,7 @@ namespace AdjustBindingsiOS
 
         [Obsolete("This method is deprecated. Please use this method: EventWithEventToken(string eventToken)")]
         [Export("initWithEventToken:")]
-        IntPtr Constructor(string eventToken);
+        NativeHandle Constructor(string eventToken);
 
         [Static, Export("eventWithEventToken:")]
         ADJEvent EventWithEventToken(string eventToken);
@@ -319,7 +319,7 @@ namespace AdjustBindingsiOS
         NSDictionary PartnerParameters { get; }
 
         [Export("initWithPrice:currency:transactionId:andReceipt:")]
-        IntPtr Constructor(NSDecimalNumber price, string currency, string transactionId, NSData receipt);
+        NativeHandle Constructor(NSDecimalNumber price, string currency, string transactionId, NSData receipt);
 
         [Export("setTransactionDate:")]
         void SetTransactionDate(NSDate transactionDate);
@@ -347,7 +347,7 @@ namespace AdjustBindingsiOS
         void AddGranularOption(string partnerName, string key, string value);
 
         [Export("initWithIsEnabledNumberBool:")]
-        IntPtr Constructor([NullAllowed] NSNumber isEnabledNumberBool);
+        NativeHandle Constructor([NullAllowed] NSNumber isEnabledNumberBool);
     }
 
     [BaseType(typeof(NSObject))]
